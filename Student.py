@@ -3,7 +3,6 @@ import sqlite3
 connection = sqlite3.connect("exam.db")
 cursor = connection.cursor()
 
-# Drop old table because your old table has wrong column name: total marks
 cursor.execute("DROP TABLE IF EXISTS student")
 
 cursor.execute("""
